@@ -29,66 +29,67 @@
 
 <main class="page-main">
   <div class="top-banner">
-    <h1 class="top-banner__title">Каталог товаров</h1>
+    <h1 class="top-banner__title content-title">Каталог товаров</h1>
   </div>
-  <ul class="catalog">
-    <li class="catalog-item">
-      <div class="catalog-item__image">
-        <img src="img/logotype-mobile.svg" alt="Игрушка Зайчик-попрыгайчик." width="260" height="195">
-      </div>
-      <div class="catalog-item__info">
-        <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
-        <p class="catalog-item__subtitle">Рост 30 см, вес 200 г</p>
-      </div>
-      <div class="catalog-item__bottom">
-        <p>1 200 руб.</p>
-        <a href="" class="btn button_bottom">Заказать</a>
-      </div>
-    </li>
-    <li class="catalog-item">
-      <div class="catalog-item__image">
-        <img src="img/logotype-mobile.svg" alt="Корзинка для белья." width="260" height="195">
-      </div>
-      <div class="catalog-item__info">
-        <h3 class="catalog-item__title">Корзинка для белья</h3>
-        <p class="catalog-item__subtitle">Диаметр 15 см, высота 10 см</p>
-      </div>
-      <div class="catalog-item__bottom">
-        <p>690 руб.</p>
-        <a href="" class="btn button_bottom">Заказать</a>
-      </div>
-    </li>
-    <li class="catalog-item">
-      <div class="catalog-item__image">
-        <img src="img/logotype-mobile.svg" alt="Корзинка для белья." width="260" height="195">
-      </div>
-      <div class="catalog-item__info">
-        <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
-        <p class="catalog-item__subtitle">Диаметр 30 см, высота 30 см</p>
-      </div>
-      <div class="catalog-item__bottom">
-        <p>1500 руб.</p>
-        <a href="" class="btn button_bottom">Заказать</a>
-      </div>
-    </li>
-
-    <!-- здесь будет блок с видео и кнопкой заказать. это должна быть форма?-->
-    <!--<li> </li>-->
-    <li class="catalog-item">
-      <div class="catalog-item__info">
-        <h3 class="catalog-item__title catalog-item__title--cam">Процесс производства</h3>
-        <!-- Камеру не надо как элемент before вставлять?-->
-        <video class="catalog-item__video" width="260" height="150" src="#"></video>
-        <p class="catalog-item__subtitle">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары.</p>
-      </div>
-      <div class="catalog-item__bottom">
-        <a href="#" class="btn ">Сделать заказ</a>
-      </div>
-    </li>
-  </ul>
+  <div class="catalog">
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <div class="catalog-item__image">
+          <img src="img/logotype-mobile.svg" alt="Игрушка Зайчик-попрыгайчик." width="260" height="195">
+        </div>
+        <div class="catalog-item__info">
+          <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+          <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
+        </div>
+        <div class="catalog-item__bottom">
+          <p>1 200 руб.</p>
+          <a href="" class="btn" alt="Кнопка в виде картинки Корзины"></a>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div class="catalog-item__image">
+          <img src="img/logotype-mobile.svg" alt="Корзинка для белья." width="260" height="195">
+        </div>
+        <div class="catalog-item__info">
+          <h3 class="catalog-item__title">Корзинка для белья</h3>
+          <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+        </div>
+        <div class="catalog-item__bottom">
+          <p>690 руб.</p>
+          <a href="" class="btn" alt="Кнопка в виде картинки Корзины"></a>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div class="catalog-item__image">
+          <img src="img/logotype-mobile.svg" alt="Корзинка для белья." width="260" height="195">
+        </div>
+        <div class="catalog-item__info">
+          <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+          <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+        </div>
+        <div class="catalog-item__bottom">
+          <p>1500 руб.</p>
+          <a href="" class="btn" alt="Кнопка в виде картинки Корзины"></a>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div class="catalog-item__info">
+          <h3 class="catalog-item__title catalog-item__title--cam">Процесс производства</h3>
+          <div class="catalog-item__video">
+            <img src="img/logotype-mobile.svg" alt="Картинка видео" width="260" height="150">
+            <a href="#" class="btn catalog-item__video-btn">Сделать заказ</a>
+          <video class="" width="260" height="150" src="#"></video>
+          </div>
+          <p class="catalog-item__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+            как появляются наши товары.</p>
+        </div>
+        <div class="catalog-item__order order">
+          <a href="#" class="btn order__btn">Сделать заказ</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </main>
-
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <div class="page-footer__social social">
