@@ -1,4 +1,54 @@
-.advantages{}
-.advantages__wrapper{}
-.advantages__title{}
-.advantages__list{}
+.advantages{
+  width: 320px;
+  height: 761px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: flex-start; /*Центрирование по вертикали */
+
+}
+
+.advantages:before{
+  content: "";
+  position: absolute;
+  width: 319px;
+  height: 6px;
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+}
+
+
+.advantages__wrapper{
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /*Центрирование по горизонтали*/
+
+}
+.advantages__title{
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+
+  margin-bottom: 30px;
+  margin-left: 29px;
+}
+.advantages__list{
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin: 0 auto;
+  padding: 0;
+}
