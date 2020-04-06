@@ -1,11 +1,125 @@
-.product{}
-.product__header-wrapper{}
-.product__title {}
-.product__subtitle{}
-.product__table{}
-.product__row{}
-.product__img{}
+.product {
+  width: 320px;
+  height: 820px;
+  background-color: #ffffff;
 
-.product__info{}
-.product__price{}
-.product__btn-order{}
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: flex-start; /*Центрирование по вертикали */
+
+
+}
+
+.product__header-wrapper {
+  width: 253px; /*должно быть 246px; но тогда title в одну троку не становится*/
+
+}
+
+.product__title {
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 8px;
+
+}
+
+.product__subtitle {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #63d1bb;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+
+}
+
+.product__text {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+
+}
+
+.product__table {
+  width: 260px;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.product__table-td {
+  border-bottom: 1px solid #ececec;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+
+.product__img {
+  width: 260px;
+  height: 315px;
+  background-image: url("../../img/triple-set-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 29px;
+
+}
+
+.product__info {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.product__price {
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding: 0;
+
+}
+
+.product__btn-order {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+  text-transform: uppercase;
+  width: 259px;
+  height: 52px;
+  border: solid 2px #444444;
+  background-color: #ffffff;
+
+
+  display: table-cell;
+  vertical-align: middle
+}
+

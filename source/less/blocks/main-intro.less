@@ -1,16 +1,15 @@
-.main-intro{
+.main-intro {
   width: 320px;
-  height: 373px;
+  height: 489px;
   background-image: url("../../img/hero-mobile@1x.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-color: #ffffff;
 
   margin: 0 auto;
   padding: 0;
-
-
 }
+
 .main-intro__title {
   font-size: 27px;
   font-weight: bold;
@@ -24,8 +23,77 @@
   display: block;
   width: 244px;
   margin: auto;
+  margin-top: 76px;
+  margin-bottom: 120px;
   padding: 0;
 
 }
-.main-intro__list{}
-.main-intro__item{}
+
+.main-intro__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.main-intro__item {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  height: 103px;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+
+  padding-top: 30px;
+  padding-left: 29px;
+}
+
+.main-intro__item-link{
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #ffffff;
+  display: block;
+  box-sizing: border-box;
+  width: 106px;
+  height: 83px;
+
+}
+
+.main-intro__item--interior-icon{
+  position: relative;
+  background-color: #63d1bb;
+}
+.main-intro__item--interior-icon:after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 62px;
+  bottom: 18px;
+  right: 36px;
+  background-image: url("../../img/icon-interior.svg");
+}
+
+
+.main-intro__item--toys-icon{
+  position: relative;
+  background-color: #56c3b2;
+}
+.main-intro__item--toys-icon:after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 18px;
+  right: 36px;
+  background-image: url("../../img/icon-toy.svg");
+}
