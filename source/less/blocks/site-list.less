@@ -1,0 +1,62 @@
+.site-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  /* Временно для сетки */
+  min-height: 316px;
+}
+
+.site-list__item {
+  display: block;
+  box-sizing: border-box;
+  min-height: 79px;
+  width: 100%;
+  padding-top: 26px;
+  padding-left: 76px;
+
+  border: 1px solid #ececec;
+  /*как слить в промежутках строки без использования nth-child ?*/
+  /*нужна ли полная обводка?*/
+}
+
+.site-list__item-link {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000000;
+}
+
+.site-list__item--icon-search {
+  position: relative;
+}
+
+.site-list__item--icon-search::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 32px;
+  left: 32px;
+  background-image: url("../../img/icon-search.svg");
+}
+
+.site-list__item--icon-cart {
+  position: relative;
+}
+
+.site-list__item--icon-cart::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 32px;
+  left: 32px;
+  background-image: url("../../img/icon-cart.svg");
+}
