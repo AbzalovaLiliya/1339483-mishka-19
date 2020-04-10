@@ -1,27 +1,30 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   background-color: #ffffff;
+  position: relative;
+  text-align: center;
 }
 
 .page-header__logo {
-  height: 79px;
-  width: 320px;
   background-color: #ffffff;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: center; /*Центрирование по горизонтали*/
-  align-items: center; /*Центрирование по вертикали */
+  display: inline-block;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
-.page-header__logo-img {
-  width: 86px;
-  height: 35px;
-  background-image: url("../../img/logo-mobile.svg");
+.page-header__logo-mobile{
+/*в зависимости от размера этому классу будет задаваться например чтобы он скрывался и показывался другой логотип*/
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 20px;
+  width: 20px;
+  background-image: url("../img/icon-menu-close.svg");
+  /*потом картинка будет меняться на  background-image: url("../../img/icon-menu-open.svg");*/
   background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
-
-/*.page-header__wrapper {
-
-}*/

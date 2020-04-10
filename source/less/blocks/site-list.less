@@ -3,60 +3,54 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 100%;
-
-  /* Временно для сетки */
-  min-height: 316px;
 }
 
 .site-list__item {
-  display: block;
-  box-sizing: border-box;
-  min-height: 79px;
-  width: 100%;
-  padding-top: 26px;
-  padding-left: 76px;
-
+   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   border: 1px solid #ececec;
-  /*как слить в промежутках строки без использования nth-child ?*/
-  /*нужна ли полная обводка?*/
 }
 
-.site-list__item-link {
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+.site-list__item .site-list__item {
+  border-top: 0;
+}
+
+.site-list__link {
+  text-decoration: none;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
   color: #000000;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  padding-right: 60px;
+
 }
 
-.site-list__item--icon-search {
+.site-list__link-search{
   position: relative;
 }
 
-.site-list__item--icon-search::before {
-  content: "";
+.site-list__link-cart{
+  position: relative;
+}
+
+.site-list__link--icon-search {
   position: absolute;
   width: 18px;
   height: 18px;
   bottom: 32px;
   left: 32px;
-  background-image: url("../../img/icon-search.svg");
 }
 
-.site-list__item--icon-cart {
-  position: relative;
-}
-
-.site-list__item--icon-cart::before {
-  content: "";
+.site-list__link--icon-cart {
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 19px;
   bottom: 32px;
   left: 32px;
-  background-image: url("../../img/icon-cart.svg");
 }

@@ -1,29 +1,16 @@
 .reviews {
-  width: 320px;
-  height: 669px;
   background-color: #ffffff;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding-right: 30px;
   padding-left: 30px;
   display: flex;
   flex-direction: column;
-
   position: relative;
 }
 
-.reviews::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 6px;
-  bottom: 0;
-  margin-left: -30px;
-  background-image: url("../../img/bg-zigzag-line.svg");
-}
-
 .reviews__wrapper {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -36,21 +23,19 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  padding-top: -5px;
-  min-height: 25px;
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .reviews__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .reviews__item {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -63,9 +48,10 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0;
   padding: 0;
+  padding-bottom: 40px;
+
 }
 
 .reviews__author {
@@ -83,16 +69,14 @@
   font-weight: normal;
   line-height: 24px;
   color: #444444;
-  margin: 0 auto;
-  margin-bottom: 36px;
+  margin: 0;
   padding: 0;
+  padding-bottom: 36px;
+
 }
 
 .reviews__write {
-  display: flex;
-  justify-content: center; /*Центрирование по горизонтали*/
-  align-items: flex-start; /*Центрирование по вертикали */
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -107,18 +91,12 @@
   text-align: center;
   color: #444444;
   text-transform: uppercase;
-
   border: solid 2px #444444;
   background-color: #ffffff;
   margin: 0 auto;
   padding: 0;
   width: 260px;
   height: 52px;
-
-  /*display: table-cell;
-  vertical-align: middle;*/
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: table-cell;
+  vertical-align: middle;
 }
