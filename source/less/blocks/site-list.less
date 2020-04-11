@@ -1,17 +1,16 @@
 .site-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
 .site-list__item {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
-  border: 1px solid #ececec;
+  border: 1px solid @white-two;
 }
 
 .site-list__item .site-list__item {
@@ -23,19 +22,11 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
-  color: #000000;
+  color: @black;
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 76px;
   padding-right: 60px;
-
-}
-
-.site-list__link-search{
-  position: relative;
-}
-
-.site-list__link-cart{
   position: relative;
 }
 
