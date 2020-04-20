@@ -7,8 +7,7 @@
   position: relative;
 }
 
-
-.checkbox__input + .checkbox::before {
+.checkbox::before {
   content: "";
   position: absolute;
   top: 0;
@@ -17,23 +16,17 @@
   width: 40px;
   height: 39px;
   border: solid 2px @dark-grey;
-  background-color: @white;
 }
 
-/*.checkbox__input:checked + .checkbox::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border: solid 2px @dark-grey;
-  background-color: transparent;
+.checkbox__input:checked + .checkbox::before {
   background-image: url("../img/icon-tick.svg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: 22px 16px;
 }
-*/
+
 
 .checkbox__input {
   /*чем заполнять если скрываю значок по умолчанию при помощи visually-hidden?*/
+  /*или класс вообще убрать от элемента input?*/
 }
