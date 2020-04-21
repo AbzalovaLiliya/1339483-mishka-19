@@ -6,13 +6,20 @@
 
 .page-header__logo {
   background-color: #ffffff;
-  display: inline-block;
   padding-top: 22px;
   padding-bottom: 22px;
+  display: inline-block;
+  /* display: block;
+   margin: 0 auto;
+   width: 86px;*/
+
 }
 
-.page-header__logo-mobile {
-  /*в зависимости от размера этому классу будет задаваться например чтобы он скрывался и показывался другой логотип*/
+.page-header__logo-img{
+  width: 85px;
+  height: 35px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 .page-header__toggle {
@@ -27,4 +34,30 @@
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    margin: 0;
+    padding: 22px 209px 20px 51px;
+
+
+
+  }
+
+  .page-header__logo-img{
+    margin: 0;
+    padding: 0;
+    width: 112px;
+    height: 46px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+
+
 }

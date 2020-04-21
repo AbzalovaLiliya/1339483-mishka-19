@@ -1,8 +1,87 @@
 .main-nav {
-  /*наверное будет заполнен*/
+  margin: 0 auto;
+  padding: 0;
 }
 
 .main-nav__list {
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid @white-two;
+}
+
+.main-nav__item + .main-nav__item {
+  border-top: 0;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  text-align: start;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  color: @black;
+  padding: 27px 60px 27px 76px;
+  position: relative;
+  width: 100%;
+}
+
+.main-nav__icon {
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-nav__item--entrance,
+.main-nav__item--sale{
+  display: none;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__item--catalog {
+    order: 3;
+  }
+
+  .main-nav__item--form {
+    order: 4;
+  }
+
+  .main-nav__item--search {
+    order: 1;
+  }
+
+  .main-nav__item--basket {
+    order: 2;
+  }
+
+  .main-nav__delivery {
+    order: 5;
+  }
+
 }
