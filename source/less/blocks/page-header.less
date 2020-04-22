@@ -1,20 +1,20 @@
 .page-header {
   background-color: #ffffff;
   position: relative;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .page-header__logo {
-  background-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  background-color: @white;
   padding-top: 22px;
   padding-bottom: 22px;
-  display: inline-block;
-  /* display: block;
-   margin: 0 auto;
-   width: 86px;*/
 }
 
 .page-header__logo-img {
+  margin: 0 auto;
+  padding: 0;
   width: 85px;
   height: 35px;
   background-image: url("../img/logo-mobile.svg");
@@ -28,7 +28,6 @@
   height: 20px;
   width: 20px;
   background-image: url("../img/icon-menu-close.svg");
-  /*потом картинка будет меняться на  background-image: url("../../img/icon-menu-open.svg");*/
   background-repeat: no-repeat;
   background-color: #ffffff;
   border: none;
@@ -41,8 +40,10 @@
   }
 
   .page-header__logo {
+    display: block;
+    order: -9;
     margin: 0;
-    padding: 22px 209px 20px 51px;
+    padding: 22px 0 20px 51px;
   }
 
   .page-header__logo-img {
