@@ -31,3 +31,23 @@
 .slider__btn--first {
   border-right: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__buttons {
+    position: absolute;
+    top: 300px;
+    right: 0;
+  }
+
+  .slider__btn {
+    border: none;
+  }
+
+  .slider__btn:first-child {
+    margin-right: 37px;
+  }
+}

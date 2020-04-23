@@ -1,12 +1,9 @@
 .advantages {
   background-color: #ffffff;
   margin: 0;
+  margin-top: 34px;
   margin-bottom: 30px;
   padding: 0 30px;
-}
-
-.advantages__wrapper {
-  /*наверное понадобится*/
 }
 
 .advantages__title {
@@ -21,10 +18,23 @@
 
 .advantages__list {
   width: 100%;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.18;
-  color: @black;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    margin-top: 60px;
+    margin-bottom: 82px;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    padding: 0;
+    margin-bottom: 47px;
+  }
+
+
 }

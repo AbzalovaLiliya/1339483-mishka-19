@@ -1,4 +1,8 @@
 .input {
+  position: relative;
+}
+
+.input__field {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -7,14 +11,14 @@
   border-bottom: 2px solid @black;
 }
 
-.input::placeholder {
+.input__field::placeholder {
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   color: @greyish-brow;
 }
 
-.input-label {
+.input__label {
   display: block;
   margin: 0;
   padding: 0;
@@ -27,9 +31,9 @@
   color: @black;
 }
 
-.input__wrapper {
+/*.input__wrapper {
   position: relative;
-}
+}*/
 
 .input__image {
   position: absolute;

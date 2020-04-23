@@ -1,5 +1,9 @@
 .icon-list {
   list-style: none;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: @black;
 }
 
 .icon-list__item {
@@ -51,4 +55,49 @@
   width: 33px;
   height: 32px;
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+
+@media (min-width: @tablet-width) {
+  .icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  .icon-list__item {
+    width: 50%;
+    padding-bottom: 60px;
+  }
+
+
+  .icon-list__item--flower {
+    order: 1;
+  }
+
+  .icon-list__item--money {
+    order: 2;
+  }
+
+  .icon-list__item--heart {
+    order: 4;
+    padding-bottom: 0;
+  }
+
+  .icon-list__item--circle {
+    order: 1;
+  }
+
+  .icon-list__item--rocket {
+    order: 3;
+  }
+
+  .icon-list__item--present {
+    order: 5;
+    padding-bottom: 0;
+  }
+
 }
