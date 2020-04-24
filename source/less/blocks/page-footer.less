@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   text-align: center;
-  padding: 25px 92px 25px 88px;
+  padding: 25px 52px 25px 88px;
 }
 
 .page-footer__copyright {
@@ -17,4 +17,31 @@
   margin: 0;
   box-sizing: border-box;
   text-align: center;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    padding: 51px 50px 51px 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
 }

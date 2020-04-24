@@ -75,6 +75,7 @@
     background-size: 1150px 746px;
     position: relative;
   }
+
   .main-intro::after {
     content: "";
     position: absolute;
@@ -102,5 +103,48 @@
 
   .main-intro__item {
     width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-intro {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: 1150px 729px;
+    position: relative;
+  }
+
+  .main-intro::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    top: 97.5%;
+    height: 24px;
+    background-size: auto 37px;
+    background-position-x: 14px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+  }
+
+  .main-intro__list {
+    flex-direction: row;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .main-intro__title {
+    font-size: 53px;
+    line-height: 1.08;
+    padding: 161px 265px 354px 265px;
+  }
+
+  .main-intro__item {
+    width: 50%;
+  }
+
+  .main-intro__link {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 35px 377px 34px 37px;
   }
 }

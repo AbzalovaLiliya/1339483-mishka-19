@@ -2,6 +2,7 @@
   background-color: @white;
   box-sizing: border-box;
   margin: 0;
+  margin-top: 44px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
@@ -38,4 +39,40 @@
   color: @dark-grey;
   text-decoration: none;
   border-bottom: 1px solid #62d1ba;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+  }
+
+  .contacts {
+    padding: 0;
+    padding-right: 55px;
+    padding-left: 51px;
+    margin: 0;
+    margin-top: 72px;
+    margin-bottom: 65px;
+  }
+
+  .contacts__table {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__table-td {
+    max-width: 220px;
+  }
+
+  .contacts__table-tr:first-child {
+    margin-right: 55px;
+  }
+
 }
