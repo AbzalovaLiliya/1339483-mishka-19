@@ -74,5 +74,34 @@
   .contacts__table-tr:first-child {
     margin-right: 55px;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .contacts {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    padding-top: 81px;
+    padding-left: 174px;
+  }
+
+  .contacts__table tbody {
+    display: table;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 1.08;
+    padding-bottom: 64px;
+  }
+
+  .contacts__title:after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 86%;
+    width: 46px;
+    height: 61px;
+    background-image: url("../img/icon-flag.svg");
+  }
 }

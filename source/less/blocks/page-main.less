@@ -38,7 +38,23 @@
 
 @media (min-width: @tablet-width) {
   .page-main {
-    border-top: 1px solid @white-two;
+    /* border-top: 1px solid @white-two;*/
     margin-top: -49px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 105px;
+  }
+  .page-main__contacts-container {
+    display: flex;
+    position: relative;
+    margin-top: 71px;
+    margin-bottom: -71px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
