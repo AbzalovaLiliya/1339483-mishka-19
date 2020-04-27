@@ -35,7 +35,6 @@
 }
 
 .article__bottom {
-  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,11 +98,43 @@
     padding: 0;
   }
 
-  .article__order-btn{
+  .article__order-btn {
     position: absolute;
     right: 0;
     padding: 20px 28px;
     outline: none;
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .article__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .article__info {
+    padding: 26px 28px 0;
+  }
+
+  .article__title {
+    padding: 0;
+    margin: 0 0 4px 0;
+  }
+
+  .article__text {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .article__bottom {
+    padding: 23px 0 25px;
+    margin-top: auto;
   }
 }

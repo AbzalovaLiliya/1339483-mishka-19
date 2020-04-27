@@ -50,6 +50,30 @@
   .catalog__order {
     margin: 0;
     padding: 0 47px 0 41px;
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    margin-top: 128px;
+    margin-bottom: 38px;
+    padding: 0 50px 0 50px;
   }
 
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
+
+  .catalog__order {
+    order: 3;
+    padding: 0;
+  }
+
+  .catalog__item {
+    margin-bottom: 0;
+    max-width: 316px;
+  }
 }
