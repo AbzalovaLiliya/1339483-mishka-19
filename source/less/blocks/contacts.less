@@ -41,7 +41,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .contacts {
     padding: 0;
     padding-right: 55px;
@@ -58,11 +57,11 @@
     padding-bottom: 45px;
   }
 
-  .contacts__title:after {
+  .contacts__title::after {
     content: "";
     position: absolute;
     top: -14%;
-    right: 0%;
+    right: 0;
     width: 46px;
     height: 61px;
     background-image: url("../img/icon-flag.svg");
@@ -107,7 +106,7 @@
     padding-bottom: 43px;
   }
 
-  .contacts__title:after {
+  .contacts__title::after {
     content: "";
     position: absolute;
     top: 14%;
@@ -121,5 +120,4 @@
     padding-right: 23px;
     padding-bottom: 21px;
   }
-
 }

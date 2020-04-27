@@ -36,7 +36,7 @@
   padding: 0;
 }
 
-.page-main__container{
+.page-main__container {
   margin-top: 23px;
 }
 
@@ -48,6 +48,30 @@
   .page-main__contacts-container {
     margin-top: 58px;
   }
+
+  .page-main__banner {
+    position: relative;
+    padding: 96px 35px 82px 35px;
+  }
+
+  .page-main__title {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+  }
+
+  .page-main__banner::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 92.5%;
+    height: 24px;
+    background-size: auto 37px;
+    background-position-x: 14px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -55,11 +79,12 @@
     margin-top: -66px;
   }
 
-  .page-main__container{
+  .page-main__container {
     display: flex;
     flex-direction: column;
     margin-bottom: 105px;
   }
+
   .page-main__contacts-container {
     display: flex;
     position: relative;
