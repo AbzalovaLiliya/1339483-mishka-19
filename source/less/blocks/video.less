@@ -1,3 +1,13 @@
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .video__title {
   display: block;
   box-sizing: border-box;
@@ -25,6 +35,7 @@
 }
 
 .video__subtitle {
+  display: block;
   font-size: 13px;
   line-height: 1.85;
   margin: 0;
@@ -46,5 +57,38 @@
 }
 
 @media (min-width: @tablet-width) {
-  
+  .video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video__title {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 37px 70px 0 106px;
+    margin-bottom: 31px;
+    order: 1;
+  }
+
+  .video__title::before {
+    top: 32px;
+    left: 42px;
+  }
+
+  .video__subtitle {
+    order: 2;
+    font-size: 15px;
+    line-height: 2;
+    padding: 0 41px 0 40px;
+    margin-bottom: 35px;
+  }
+
+  .video__film {
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    position: relative;
+    order: 0;
+  }
+
 }
