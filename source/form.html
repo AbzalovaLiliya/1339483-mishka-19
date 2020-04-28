@@ -14,9 +14,19 @@
     <a href="index.html" class="page-header__logo">
       <div class="page-header__logo-img"></div>
     </a>
-    <button class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+    <button class="page-header__toggle" type="button">
+      <svg class="page-header__burger-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
+        <rect fill="#231F20" width="19.958" height="2"/>
+        <rect y="6" fill="#231F20" width="19.958" height="2"/>
+        <rect y="12" fill="#231F20" width="19.958" height="2"/>
+      </svg>
+      <svg class="page-header__close-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
+        <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
+      </svg>
+      <span class="visually-hidden">открыть меню</span>
+    </button>
 
-    <ul class="nav-list">
+    <ul class="nav-list page-header__mobile-nav">
       <li class="nav-list__item nav-list__item--catalog">
         <a href="catalog.html" class="nav-list__link">Каталог
           товаров</a>
@@ -26,7 +36,7 @@
       </li>
     </ul>
 
-    <ul class="user-list">
+    <ul class="user-list  page-header__mobile-nav">
       <li class="user-list__item">
         <a href="" class="user-list__link user-list__link--search">
           <svg class="user-list__icon user-list__icon--search" aria-label="Изображение лупы" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -232,5 +242,6 @@
     </div>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

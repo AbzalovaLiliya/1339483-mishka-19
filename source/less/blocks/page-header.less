@@ -27,12 +27,37 @@
   right: 30px;
   height: 20px;
   width: 20px;
-  background-image: url("../img/icon-menu-close.svg");
-  background-repeat: no-repeat;
+  /*background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;*/
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  outline: none;
 }
+
+/*---------------------------------------------------------------*/
+.page-header__toggle--active .page-header__burger-icon {
+  display: none;
+}
+
+.page-header__toggle--active .page-header__close-icon {
+  display: block;
+}
+
+.page-header__close-icon {
+  display: none;
+}
+
+
+@media (max-width: @tablet-width/*@mobile-width*/) {
+  .page-header--closed .page-header__mobile-nav {
+    display: none;
+  }
+}
+
+
+/*---------------------------------------------------------*/
+
 
 @media (min-width: @tablet-width) {
   .page-header {
