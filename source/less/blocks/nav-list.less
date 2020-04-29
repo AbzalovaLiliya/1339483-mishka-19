@@ -7,9 +7,9 @@
   flex-wrap: wrap;
 }
 
-.nav-list--small {
+/*.nav-list--small {
   display: none;
-}
+}*/
 
 .nav-list__item {
   display: flex;
@@ -27,6 +27,8 @@
 }
 
 .nav-list__link {
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
   text-align: start;
   font-size: 17px;
@@ -46,7 +48,8 @@
     z-index: 5;
     margin: 0;
     padding: 0;
-    padding-left: 50px;
+    padding-top: 17px;
+    /*padding-left: 50px;*/
   }
 
   .nav-list__item {
@@ -60,15 +63,15 @@
     line-height: 24px;
     margin: 0;
     padding: 0;
-  }
-
-  .nav-list__link:last-child {
     padding-right: 37px;
   }
 
-  .nav-list--small {
-    display: none;
-  }
+  /* .nav-list__link:last-child {
+     padding-right: 37px;
+   }*/
+  /* .nav-list--small {
+     display: none;
+   }*/
 }
 
 @media (min-width: @desktop-width) {
@@ -84,43 +87,46 @@
     font-size: 17px;
     line-height: 1.41;
     margin: 0;
-    padding: 30px 35px 32px 48px;
+    padding: 30px 35px 32px 35px
+  }
+  .nav-list__link--first {
+    padding-left: 0;
   }
 
-  .nav-list__link--entrance,
-  .nav-list__link--sale {
-    font-size: 15px;
-    line-height: 24px;
-  }
-
+  /* .nav-list__link--entrance,
+   .nav-list__link--sale {
+     font-size: 15px;
+     line-height: 24px;
+   }
+ */
   .nav-list__item {
     border: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-list__item--catalog {
     border-right: 1px solid @white-two;
-  }
-
-  .nav-list__link--form {
-    padding: 31px 65px 31px 34px;
-  }
-
-  .nav-list--small {
-    display: flex;
-    flex-direction: row;
     margin: 0;
     padding: 0;
-    order: 4;
-    z-index: 5;
   }
 
-  .nav-list--small .nav-list__link {
-    font-size: 15px;
-    line-height: 1.6;
-    padding-top: 17px;
-    padding-left: 49px;
-    padding-right: 18px;
+  .nav-list__item:last-child {
+    border: none;
   }
+
+  /*.nav-list__link--form {
+    padding: 31px 65px 31px 34px;
+  }*/
+  /* .nav-list--small {
+     display: flex;
+     flex-direction: row;
+     margin: 0;
+     padding: 0;
+     order: 4;
+     z-index: 5;
+   }
+
+   .nav-list--small .nav-list__link {
+     font-size: 15px;
+     line-height: 1.6;
+     padding-top: 17px;
+     padding-left: 49px;
+     padding-right: 18px;
+   }*/
 }

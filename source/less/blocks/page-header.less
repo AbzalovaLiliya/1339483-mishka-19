@@ -8,8 +8,9 @@
   display: block;
   margin: 0 auto;
   background-color: @white;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 0;
+ /* padding-top: 22px;
+  padding-bottom: 22px;*/
 }
 
 .page-header__logo-img {
@@ -29,6 +30,7 @@
   width: 20px;
   /*background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;*/
+  background-size: cover;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -36,6 +38,10 @@
 }
 
 /*---------------------------------------------------------------*/
+.page-header__burger-icon{
+  display: block;
+}
+
 .page-header__toggle--active .page-header__burger-icon {
   display: none;
 }
@@ -72,7 +78,7 @@
     display: block;
     order: 0;
     margin: 0;
-    padding: 22px 0 20px 51px;
+    /*padding: 22px 0 20px 51px;*/
   }
 
   .page-header__logo-img {

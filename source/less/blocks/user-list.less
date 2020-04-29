@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -19,6 +20,8 @@
 }
 
 .user-list__link {
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
   text-align: start;
   font-size: 17px;
@@ -56,6 +59,7 @@
 */
 
 .user-list__icon {
+  display: block;
   position: absolute;
   width: 20px;
   height: 19px;
@@ -80,16 +84,29 @@
     border-left: 1px solid @white-two;
   }
 
-  .user-list__icon--search path,
+ /* .user-list__icon--search path,
   .user-list__icon--basket path {
+    fill: #d3d2d2;
+  }*/
+  .user-list__icon path {
     fill: #d3d2d2;
   }
 
-  .user-list__link--search-text {
+  .user-list__text {
     display: none;
   }
 
-  .user-list__link--search {
+  .user-list__link {
+    margin: 0;
+    padding: 32px 0 32px 83px;
+  }
+
+  .user-list__link--style {
+    margin: 0;
+    padding: 36px 41px 34px 41px;
+  }
+
+ /* .user-list__link--search {
     margin: 0;
     padding: 36px 41px 34px 41px;
   }
@@ -97,7 +114,7 @@
   .user-list__link--basket {
     margin: 0;
     padding: 32px 52px 32px 83px;
-  }
+  }*/
 }
 
 @media (min-width: @desktop-width) {
@@ -116,16 +133,15 @@
     border-left: 1px solid @white-two;
   }
 
-  .user-list__icon--search path,
-  .user-list__icon--basket path {
+  .user-list__icon path {
     fill: #d3d2d2;
   }
 
-  .user-list__link--search-text {
+  .user-list__text {
     display: none;
   }
 
-  .user-list__link--search {
+ /* .user-list__link--search {
     margin: 0;
     padding: 32px 43px 32px 41px;
   }
@@ -133,5 +149,5 @@
   .user-list__link--basket {
     margin: 0;
     padding: 30px 53px 32px 80px;
-  }
+  }*/
 }

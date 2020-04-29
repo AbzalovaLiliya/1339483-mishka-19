@@ -1,0 +1,40 @@
+.offer-list {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .offer-list {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .offer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    order: 4;
+    z-index: 5;
+  }
+
+  .offer-list__link {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: start;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: @black;
+    padding-top: 17px;
+    padding-left: 49px;
+    padding-right: 18px;
+  }
+
+  .offer-list__link--first{
+    padding-left: 0;
+  }
+}
