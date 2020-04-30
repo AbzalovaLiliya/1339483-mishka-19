@@ -1,6 +1,3 @@
-.social { /*будет заполнено*/
-}
-
 .social__list {
   list-style: none;
   display: flex;
@@ -10,11 +7,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
-  /* justify-content: flex-end;*/
-  /* align-items: flex-end;*/
-  /*width: 100%;*/
 }
 
-.social__item {
-  /*margin-right: 40px;*/
+@media (min-width: @tablet-width) {
+  .social__list {
+    min-width: 178px;
+    padding-left: 79px;
+  }
 }
