@@ -33,12 +33,17 @@
 
 .article__bottom {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  flex-wrap: nowrap;
-  margin: 27px 0 0;
-  padding: 27px 0 30px;
+  /*margin: 27px 0 0;*/
+  padding: 23px 0 0;
   border-top: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.article__order-btn {
+  position: absolute;
+  top: 23px;
+  right: -1px; /*left: 184px;*/
 }
 
 .article__price {
@@ -55,7 +60,6 @@
   .article {
     display: flex;
     justify-content: center;
-    position: relative;
   }
 
   .article__info {
@@ -87,6 +91,7 @@
   .article__bottom {
     padding-left: 5px;
     margin-top: auto;
+    position: relative;
   }
 
   .article__price {
@@ -108,7 +113,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
   }
 
   .article__image {
@@ -131,6 +135,7 @@
   }
 
   .article__bottom {
+    position: relative;
     padding: 23px 0 25px;
     margin-top: auto;
   }

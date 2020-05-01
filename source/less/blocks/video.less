@@ -3,10 +3,10 @@
   flex-direction: column;
 }
 
-.video__container {
+/*.video__text-container {
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .video__title {
   display: block;
@@ -14,7 +14,7 @@
   line-height: 25px;
   margin: 0;
   position: relative;
-  padding: 23px 70px 26px 89px;
+  padding: 22px 70px 24px 89px;
 }
 
 .video__title::before {
@@ -27,11 +27,17 @@
   background-image: url("../img/icon-video.svg");
 }
 
+.video__film-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 .video__film {
   width: 260px;
   height: 150px;
-  background-image: url("../img/video-mobile@1x.jpg");
-  position: relative;
+  /* background-image: url("../img/video-mobile@1x.jpg");
+   position: relative;*/
 }
 
 .video__subtitle {
@@ -39,9 +45,8 @@
   font-size: 13px;
   line-height: 1.85;
   margin: 0;
-  padding: 25px 41px 25px 34px;
+  padding: 20px 41px 25px 34px;
 }
-
 
 .video__btn {
   position: absolute;
@@ -54,6 +59,15 @@
   cursor: pointer;
   background-color: transparent;
   background-image: url("../img/icon-play.svg");
+}
+
+.video__order-container {
+  margin: 0;
+  padding: 0 34px 0 34px;
+}
+
+.video__order-btn {
+  padding: 15px 10px 12px 9px;
 }
 
 @media (min-width: @tablet-width) {
@@ -83,13 +97,22 @@
     margin-bottom: 35px;
   }
 
+  .video__film-container {
+    position: relative;
+  }
+
   .video__film {
     width: 668px;
     height: 455px;
-    background-image: url("../img/video-tablet@1x.jpg");
-    position: relative;
+    /* background-image: url("../img/video-tablet@1x.jpg");
+     position: relative;*/
     order: 0;
   }
+
+  .video__order-btn {
+    padding: 15px 0 14px 0;
+  }
+
 }
 
 
@@ -98,20 +121,24 @@
     flex-direction: row;
   }
 
-  .video__film {
-    width: 65%;
-    background-image: url("../img/video-desktop@1x.jpg");
+  .video__film-container {
     position: relative;
   }
 
-  .video__container {
-    display: flex;
-    flex-direction: column;
-    padding: 97px 67px 60px 78px;
-    width: 21%; /*!! не получается уменьшить без ширины*/
-    border: 1px solid @white-two;
+  .video__film {
+    width: 65%;
+    /* background-image: url("../img/video-desktop@1x.jpg");
+     background-repeat: no-repeat;
+     position: relative;*/
   }
 
+  /* .video__text-container {
+     display: flex;
+     flex-direction: column;
+     padding: 97px 67px 60px 78px;
+     width: 21%;
+     border: 1px solid @white-two;
+   }*/
   .video__title {
     padding: 0;
   }
@@ -124,4 +151,9 @@
   .video__subtitle {
     padding: 0;
   }
+
+  .video__order-btn {
+    padding: 15px 0 14px 0;
+  }
+
 }

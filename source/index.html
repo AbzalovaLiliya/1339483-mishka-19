@@ -206,23 +206,23 @@
   </div>
 
   <div class="wrapper">
-  <section class="map">
-    <iframe class="map__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060545951284!2d30.322242735948656!3d59.938678861383316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585586505215!5m2!1sru!2sru"
-            width="525" height="457" frameborder="0" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-  </section>
+    <section class="map">
+      <iframe class="map__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060545951284!2d30.322242735948656!3d59.938678861383316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585586505215!5m2!1sru!2sru"
+              width="525" height="457" frameborder="0" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+    </section>
   </div>
 
   <div class="wrapper">
-  <section class="main__footer">
-    <a href="" class="btn main__footer-btn">Напишите нам</a>
-  </section>
+    <section class="main__footer">
+      <a href="" class="btn main__footer-btn">Напишите нам</a>
+    </section>
   </div>
-  </main>
+</main>
 
-  <footer class="page-footer">
-    <div class="wrapper">
+<footer class="page-footer">
+  <div class="wrapper">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <svg class="page-footer__logo-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
@@ -283,8 +283,31 @@
         </a>
       </div>
     </div>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+  </div>
+</footer>
+<section class="modal modal--closed"> <!--  modal--closed -->
+  <h2 class="modal__header">Добавить в корзину</h2>
+  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="modal-form__fieldset">
+      <!--  <legend class="modal-form__title">Выберите размер:</legend>  -->
+      <div class="modal-form__button-container">
+        <label class="modal-form__label">
+          <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="1" checked>
+          <span class="modal-form__box">s</span>
+        </label>
+        <label class="modal-form__label">
+          <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="2">
+          <span class="modal-form__box">m</span>
+        </label>
+        <label class="modal-form__label">
+          <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="2">
+          <span class="modal-form__box">l</span>
+        </label>
+      </div>
+    </fieldset>
+    <button class="btn btn--modal-form">Добавить</button>
+  </form>
+</section>
+<script src="js/script.js"></script>
 </body>
 </html>
