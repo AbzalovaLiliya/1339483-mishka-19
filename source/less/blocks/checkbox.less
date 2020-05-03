@@ -34,7 +34,21 @@
 
 @media (min-width: @tablet-width) {
   .checkbox {
-    flex-basis: 30%;
+    flex-basis: 50%;
     flex-grow: 1;
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  .checkbox__label {
+    padding: 14px 0 0 80px;
+  }
+
+  .checkbox__label::before {
+    width: 48px;
+    height: 48px;
   }
 }

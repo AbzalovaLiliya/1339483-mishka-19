@@ -46,13 +46,33 @@
 @media (min-width: @tablet-width) {
   .input {
     display: flex;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 19px;
   }
 
-  .input__label{
-    padding-right: 25px;
+  .input__label {
+    padding-right: 36px;
   }
 
-  .input__field{
+  .input__label--name{
+    padding-right: 28px;
+  }
+
+  .input__field {
 
   }
+
+  .input__field::placeholder {
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 19px;
+    padding: 10px 10px 10px 17px;
+  }
+
+  .input__image {
+    top: -5px;
+    right: 26px;
+  }
+
 }

@@ -40,3 +40,29 @@
 .radio__input {
   /*чем заполнять если скрываю значок по умолчанию при помощи visually-hidden?*/
 }
+
+@media (min-width: @tablet-width) {
+  .radio {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 19px;
+  }
+
+  .radio__label {
+    margin-bottom: 18px;
+    padding: 14px 0 0 80px;
+  }
+
+  .radio__label::before {
+    width: 46px;
+    height: 46px;
+  }
+
+  .radio__label--first {
+    padding: 14px 0 0 80px;
+  }
+
+  .radio__label--last {
+    margin-bottom: 0;
+  }
+}

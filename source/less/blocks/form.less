@@ -188,8 +188,30 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    padding: 0;
+  }
+
   .form__fieldset {
     position: relative;
+    margin-bottom: 43px;
+    padding: 0 53px 0 52px;
+  }
+
+  .form__fieldset--checkbox {
+    padding: 50px 27px 27px 52px;
+  }
+
+  .form__fieldset--input {
+    padding-top: 21px;
+    margin-bottom: 50px;
+  }
+
+  .form__title {
+    position: absolute;
+    max-width: 25%;
+    top: 14px;
+    left: 54px;
   }
 
   .form__title::after {
@@ -200,23 +222,31 @@
     display: none;
   }
 
-  .form__title {
-    position: absolute;
-    max-width: 25%;
-    top: 14px;
-    left: 0;
+  .form__title--checkbox {
+    top: 65px;
+    left: 54px;
   }
 
   .form__title--number {
     position: absolute;
     max-width: 25%;
-    top: 14px;
-    left: 0;
+    top: 65px;
+    left: 55px;
     margin-bottom: 15px;
   }
 
+  .form__title--fio {
+    top: 20px;
+    left: 54px;
+  }
+
+  .form__title--textarea {
+    top: 65px;
+    left: 54px;
+  }
+
   .form__list {
-    padding-left: 25%;
+    padding-left: 168px;
     width: 100%;
 
     display: block;
@@ -231,7 +261,8 @@
   .form__input {
     box-sizing: border-box;
     position: relative;
-    padding-left: 25%;
+    padding-left: 169px;
+    margin-bottom: 42px;
     width: 100%;
   }
 
@@ -239,26 +270,57 @@
     box-sizing: border-box;
   }
 
+  .form__input--number {
+    padding-top: 66px;
+    padding-left: 219px;
+    padding-right: 51px;
+    margin-bottom: 25px;
+  }
+
+  .form__input--email {
+    padding: 15px 51px 51px 219px;
+  }
+
+  .form__input--textarea {
+    padding-top: 50px;
+    padding-left: 220px;
+    padding-right: 53px;
+    margin-bottom: 32px;
+  }
+
+
   .form__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 52px;
+    padding-right: 51px;
+    padding-bottom: 32px;
   }
 
   .form__hint--btn {
     order: 0;
     padding: 14px;
-
-    max-width: 30%;
+    max-width: 34.5%;
   }
 
   .form__hint {
     order: 1;
     font-size: 17px;
     line-height: 30px;
+    padding-top: 24px;
   }
 
   .form__container {
     background-color: @very-dark-grey;
+  }
+
+  .form__textarea::placeholder {
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 19px;
+  }
+  .form__textarea {
+    height: 141px;
   }
 }
