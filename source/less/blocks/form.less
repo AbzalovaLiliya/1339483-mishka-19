@@ -230,9 +230,14 @@
   .form__title--number {
     position: absolute;
     max-width: 25%;
-    top: 65px;
+    top: -1px;
     left: 55px;
     margin-bottom: 15px;
+  }
+
+  .form__title--email {
+    top: -3px;
+    left: 55px;
   }
 
   .form__title--fio {
@@ -270,26 +275,24 @@
     box-sizing: border-box;
   }
 
+  .form__input-container {
+    padding: 66px 51px 51px 0;
+  }
+
   .form__input--number {
-    padding-top: 66px;
     padding-left: 219px;
-    padding-right: 51px;
-    margin-bottom: 25px;
   }
 
   .form__input--email {
-    padding: 15px 51px 51px 219px;
-  }
-
-  .form__input--textarea {
-    padding-top: 50px;
-    padding-left: 220px;
-    padding-right: 53px;
-    margin-bottom: 32px;
+    padding-left: 219px;
   }
 
   .form__input:last-child {
     margin: 0;
+  }
+
+  .form__input--textarea {
+    padding: 50px 53px 30px 220px;
   }
 
   .form__footer {
@@ -359,13 +362,14 @@
   }
 
   .form__title--number {
-    top: 65px;
+    top: -1px;
     left: 111px;
   }
 
   .form__title--email {
-    top: 13px;
-    left: 109px;
+    top: -1px;
+    left: 111px;
+    letter-spacing: 0;
   }
 
   .form__list--checkbox {
@@ -378,14 +382,20 @@
     letter-spacing: 1px;
   }
 
-  .form__input--number {
-    padding-left: 224px;
-    padding-right: 224px;
-    margin-bottom: 27px;
+  .form__input-container {
+    padding: 66px 224px 51px 0;
   }
 
+  .form__input--number {
+    padding-left: 224px;
+    /* padding-right: 224px;
+     margin-bottom: 27px;*/
+  }
+
+
   .form__input--email {
-    padding: 15px 224px 51px 225px;
+    /* padding: 15px 224px 51px 225px;*/
+    padding-left: 224px;
   }
 
   .form__input--textarea {
