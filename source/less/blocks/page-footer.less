@@ -1,23 +1,73 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 25px 69px 36px 69px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .page-footer {
   background-color: @very-dark-grey;
   margin: 0;
   padding: 0;
 }
 
-.page-footer__wrapper { /*будет заполнено*/
-}
-
 .page-footer__social {
-  width: 100%;
   box-sizing: border-box;
   margin: 0;
   text-align: center;
-  padding: 25px 92px 25px 88px;
 }
 
 .page-footer__copyright {
-  width: 100%;
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 50px 31px 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
 }

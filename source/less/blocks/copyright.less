@@ -1,4 +1,11 @@
-.copyright { /*будет чем-то заполнено*/
+.copyright {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
 }
 
 .copyright__text {
@@ -9,13 +16,42 @@
   vertical-align: top;
   display: inline-block;
   box-sizing: border-box;
-  padding: 26px 20px 31px 1px;
 }
 
 .copyright__link {
   display: inline-block;
   box-sizing: border-box;
   margin: 0;
-  padding-top: 22px;
-  /* наверное чем-то будет заполнено */
+  padding-top: 5px;
+  padding-left: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .copyright__text {
+    margin: 0;
+    padding-right: 31px;
+    padding-top: 11px;
+  }
+
+  .copyright__link {
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
 }

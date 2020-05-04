@@ -1,29 +1,25 @@
-.social {/*будет заполнено*/
-}
-
 .social__list {
   list-style: none;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  width: 100%;
+  padding-bottom: 20px;
 }
 
 .social__item {
   margin-right: 40px;
 }
 
-.social__link { /*будет заполнено*/
+.social__item:last-child {
+  margin-right: 0;
 }
 
-.social__link--vkontakte { /*будет заполнено*/
-}
-
-.social__link--facebook { /*будет заполнено*/
-}
-
-.social__link--instagram { /*будет заполнено*/
+@media (min-width: @tablet-width) {
+  .social__list {
+    min-width: 178px;
+    padding-left: 79px;
+  }
 }

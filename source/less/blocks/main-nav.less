@@ -1,9 +1,50 @@
 .main-nav {
-  /*наверное будет заполнен*/
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 88px;
+    margin-bottom: -42px;
+    padding: 0 52px 0 51px;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    box-sizing: border-box;
+    order: 3;
+    z-index: 5;
+    margin: 0;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 88px;
+    margin-bottom: -41px;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    box-sizing: border-box;
+    order: 4;
+    z-index: 5;
+    margin: 0;
+    margin-left: auto;
+    padding-top: 17px;
+  }
 }

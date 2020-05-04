@@ -1,0 +1,145 @@
+.article__image {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto; /*как правильно так или задавать жестко высоту и ширину, или может нужно максимальну ширину задавать?*/
+  /* width: 260px;
+   height: 195px;*/
+}
+
+.article__info {
+  margin: 0;
+  padding: 27px 27px 26px 28px;
+  border: 1px solid @white-two;
+}
+
+.article__title {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  color: @black;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 6px;
+}
+
+.article__text {
+  font-size: 13px;
+  line-height: 2.31;
+  color: @dark-grey;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 18px;
+}
+
+.article__bottom {
+  display: flex;
+  align-items: center;
+  /*margin: 27px 0 0;*/
+  padding: 23px 0 0;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.article__order-btn {
+  position: absolute;
+  top: 23px;
+  right: -1px; /*left: 184px;*/
+}
+
+.article__price {
+  margin: 0;
+  padding: 0;
+  padding-right: 109px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .article {
+    display: flex;
+    justify-content: center;
+  }
+
+  .article__info {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 28px 26px 28px;
+    flex-grow: 1;
+  }
+
+  .article__image {
+    margin: 0;
+    padding: 0;
+    width: 334px;
+    height: 334px;
+  }
+
+  .article__title {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+  }
+
+  .article__text {
+    font-size: 15px;
+    line-height: 2;
+    padding: 0;
+  }
+
+  .article__bottom {
+    padding-left: 5px;
+    margin-top: auto;
+    position: relative;
+  }
+
+  .article__price {
+    font-size: 17px;
+    line-height: 1.41;
+    padding: 0;
+  }
+
+  .article__order-btn {
+    position: absolute;
+    top: 4px;
+    right: -23px; /* left: 226px;*/
+    padding: 20px 28px;
+    outline: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .article__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .article__info {
+    padding: 26px 28px 0 25px;
+  }
+
+  .article__title {
+    padding: 0;
+    margin: 0 0 4px 0;
+  }
+
+  .article__text {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .article__bottom {
+    position: relative;
+    padding: 23px 0 25px;
+    margin-top: auto;
+  }
+}

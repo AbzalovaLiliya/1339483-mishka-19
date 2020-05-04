@@ -1,3 +1,92 @@
 .page-main {
   background-color: @white;
+  margin: 0 auto;
+}
+
+.page-main__banner {
+  margin: 0 auto;
+  padding: 70px 35px 77px 33px;
+  background-color: @very-dark-grey;
+}
+
+.page-main__title {
+  margin: 0;
+  padding: 0;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: @black;
+}
+
+.page-main__info {
+  margin: 0;
+  padding: 30px 48px 25px 30px;
+}
+
+.page-main__info--form {
+  padding: 21px 48px 22px 31px;
+}
+
+.page-main__text {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: @dark-grey;
+}
+
+.page-main__form {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__banner {
+    position: relative;
+    padding: 96px 35px 82px 35px;
+  }
+
+  .page-main__title {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+  }
+
+  .page-main__banner::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 92.5%;
+    height: 24px;
+    background-size: auto 37px;
+    background-position-x: 14px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+  }
+
+  .page-main__info--form {
+    padding: 71px 100px 60px 53px;
+  }
+
+  .page-main__text {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .page-main__banner {
+    padding: 94px 35px 102px 37px;
+  }
+
+  .page-main__info--form {
+    padding: 122px 219px 60px 226px;
+  }
 }

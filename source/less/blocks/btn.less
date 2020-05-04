@@ -1,15 +1,34 @@
 .btn {
   text-decoration: none;
+  font-family: inherit;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
-  text-align: center;
   color: @dark-grey;
   text-transform: uppercase;
-  width: 259px;
-  height: 52px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
   border: solid 2px @dark-grey;
   background-color: @white;
-  display: table-cell;
-  vertical-align: middle;
+  cursor: pointer;
+}
+
+.btn--modal-form {
+  padding: 20px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: @seafoam-blue;
+  outline: none;
+  width: 100%;
+  border: none;
+}
+
+.btn--modal-form:hover:not(:disabled),
+.btn--modal-form:focus:not(:disabled) {
+  background-color: @seafoam-blue;
 }
