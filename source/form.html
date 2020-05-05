@@ -10,9 +10,9 @@
 
 
 <header class="page-header">
+  <div class="wrapper">
   <nav class="main-nav">
     <a href="index.html" class="page-header__logo">
-      <div class="page-header__logo-img"></div>
       <!-- изменю когда посмотрю лекцию про адаптивную графику -->
     </a>
 
@@ -65,6 +65,7 @@
     </ul>
     <p class="main-nav__delivery">Бесплатная доставка по России</p>
   </nav>
+  </div>
 </header>
 
 
@@ -137,15 +138,15 @@
     <div class="wrapper">
       <fieldset class="form__fieldset form__fieldset--input">
         <h3 class="form__title form__title--fio"><span class="form__title-text">фио</span></h3>
-        <div class="form__input input">
+        <div class="form__input input form__input--name">
           <label for="name" class="input__label input__label--name">Имя:</label>
-          <input id="name" class="input__field" type="text" name="name" placeholder="Введите ваше имя*"/>
+          <input id="name" class="input__field input__field--name" type="text" name="name" placeholder="Введите ваше имя*"/>
         </div>
         <div class="form__input input form__input--surname">
           <label for="surname" class="input__label">Фамилия:</label>
           <input id="surname" class="input__field" type="text" name="surname" placeholder="Укажите фамилию*"/>
         </div>
-        <div class="form__input input">
+        <div class="form__input input form__input--last">
           <label for="patronymic" class="input__label">Отчество:</label>
           <input id="patronymic" class="input__field" type="text" name="patronymic" placeholder="Отчество, если желаете"/>
         </div>
