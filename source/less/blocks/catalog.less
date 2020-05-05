@@ -52,13 +52,18 @@
 
   .catalog__list {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 57px;
+    flex-wrap: wrap;
   }
 
   .catalog__item {
-    margin-bottom: 0;
-    width: 30%;
+    margin-bottom: 57px;
+    margin-right: 50px;
+
+    width: 316px;
+  }
+
+  .catalog__item:last-child {
+    margin-right: 0;
   }
 
   .catalog__bottom {
