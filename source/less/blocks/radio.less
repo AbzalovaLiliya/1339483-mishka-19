@@ -37,8 +37,13 @@
 }
 
 
-.radio__input {
-  /*чем заполнять если скрываю значок по умолчанию при помощи visually-hidden?*/
+.radio__input:hover:not(:disabled) + .radio__label::before,
+.radio__input:focus:not(:disabled) + .radio__label::before {
+  border-color: @seafoam-blue;
+}
+
+.radio__input:active:not(:disabled) + .radio__label::before {
+  border-color: rgba(@dark-grey, 0.3);
 }
 
 @media (min-width: @tablet-width) {

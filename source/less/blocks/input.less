@@ -15,6 +15,7 @@
   border-bottom: 2px solid @black;
   background-color: transparent;
   z-index: 1;
+  outline: none;
 }
 
 .input__field--number {
@@ -47,6 +48,26 @@
   z-index: 0;
 }
 
+.input__field:hover,
+.input__field:focus,
+.input__field:active {
+  border-color: @seafoam-blue;
+}
+
+.input__field:hover + .input__image,
+.input__field:focus + .input__image,
+.input__field:active + .input__image {
+  fill: @seafoam-blue;
+  opacity: 1;
+}
+
+.input__field:hover + .input__image path,
+.input__field:focus + .input__image path,
+.input__field:active + .input__image path {
+  fill: @seafoam-blue;
+  opacity: 1;
+}
+
 @media (min-width: @tablet-width) {
   .input {
     display: flex;
@@ -64,7 +85,7 @@
     padding-right: 23px;
   }
 
-  .input__field{
+  .input__field {
     font-size: 19px;
     font-weight: normal;
     line-height: 20px;
@@ -79,7 +100,7 @@
 
   .input__field--name::placeholder,
   .input__field--surname::placeholder,
-  .input__field--patronymic::placeholder{
+  .input__field--patronymic::placeholder {
     padding-left: 17px;
   }
 

@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 
+.video:hover,
+.video:focus-within {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.video:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .video__title {
   display: block;
   box-sizing: border-box;
@@ -50,8 +59,20 @@
   height: 77px;
   border: none;
   cursor: pointer;
+  outline: none;
   background-color: transparent;
-  background-image: url("../img/icon-play.svg");
+  /* background-image: url("../img/icon-play.svg");*/
+
+}
+
+.video__btn:hover svg,
+.video__btn:focus svg {
+  transform: scale(1.2);
+}
+
+.video__btn:active svg {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
 
 .video__order-container {
