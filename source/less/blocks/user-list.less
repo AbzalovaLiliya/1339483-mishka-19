@@ -33,6 +33,15 @@
   width: 100%;
 }
 
+.user-list__link:hover,
+.user-list__link:focus {
+  color: @lite-black;
+}
+
+.user-list__link:active {
+  color: @very-lite-black;
+}
+
 .user-list__icon {
   display: block;
   position: absolute;
@@ -41,6 +50,15 @@
   left: 32px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.user-list__icon:hover path,
+.user-list__icon:hover path {
+  fill: @seafoam-blue;
+}
+
+.user-list__icon:active path {
+  fill: @lite-seafoam-blue;
 }
 
 @media (min-width: @tablet-width) {
