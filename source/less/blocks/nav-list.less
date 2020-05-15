@@ -36,6 +36,15 @@
   width: 100%;
 }
 
+.nav-list__link:hover,
+.nav-list__link:focus {
+  color: @lite-black;
+}
+
+.nav-list__link:active {
+  color: @very-lite-black;
+}
+
 @media (min-width: @tablet-width) {
   .nav-list {
     display: flex;
@@ -75,7 +84,7 @@
     font-size: 17px;
     line-height: 1.41;
     margin: 0;
-    padding: 27px 35px 32px 35px;
+    padding: 27px 35px 32px 34px;
   }
 
   .nav-list__link--first {

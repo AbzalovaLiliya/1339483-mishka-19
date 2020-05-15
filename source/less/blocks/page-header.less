@@ -16,6 +16,15 @@
   background-position-y: 22px;
 }
 
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
+}
+
 /*.page-header__logo {
   display: block;
   margin: 0 auto;
@@ -62,16 +71,17 @@
   display: none;
 }
 
-@media (max-width: @tablet-width/*@mobile-width*/
-) {
-  .page-header--closed .page-header__mobile-nav {
-    display: none;
-  }
+.page-header--closed .page-header__mobile-nav {
+  display: none;
 }
 
 /*---------------------------------------------------------*/
 
 @media (min-width: @tablet-width) {
+  .page-header--closed .page-header__mobile-nav {
+    display: flex;
+  }
+
   .page-header {
     background: none;
   }
