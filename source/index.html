@@ -12,7 +12,11 @@
   <div class="wrapper">
     <nav class="main-nav">
       <a href="index.html" class="page-header__logo">
-        <!-- изменю когда посмотрю лекцию про адаптивную графику -->
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </picture>
       </a>
 
       <button class="page-header__toggle" type="button">
@@ -121,7 +125,11 @@
           </tr>
         </table>
         <div class="product__img-block">
-          <img class="product__image" src="/img/triple-set-desktop@1x.jpg" alt="Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаная корзинка">
+          </picture>
         </div>
         <div class="product__info">
           <p class="product__price">Цена: 990 руб.</p>
@@ -154,7 +162,6 @@
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
-        <!-- <a class="reviews__write btn" href="#">Оставить свой</a> -->
         <div class="reviews__list  slider__list">
           <div class="slider__item">
             <blockquote class="reviews__item">
