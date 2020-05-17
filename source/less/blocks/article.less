@@ -9,7 +9,7 @@
 
 .article__image {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   /* margin: 0 auto;
    padding: 0;
@@ -23,6 +23,11 @@
   margin: 0;
   padding: 27px 27px 26px 28px;
   border: 1px solid @white-two;
+}
+
+.article__link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .article__title {
@@ -92,6 +97,7 @@
   .article {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .article__info {
@@ -99,8 +105,8 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 25px 28px 26px 28px;
-    /*flex-grow: 1;*/
-    width: 50%;
+    flex-grow: 1;
+    /*width: 50%;*/
   }
 
   /* .article__image {
