@@ -6,6 +6,11 @@
   background-position: center -15%;
   background-repeat: no-repeat;
   background-color: @lite-grey;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 574px auto;
+  }
 }
 
 .main-intro__title {
@@ -29,12 +34,36 @@
   width: 100%;
 }
 
+.main-intro__item:hover,
+.main-intro__item:focus-within {
+  padding-bottom: 5px;
+  margin-top: -5px;
+}
+
 .main-intro__item--interior {
   background-color: @seafoam-blue;
 }
 
+.main-intro__item--interior:hover,
+.main-intro__item--interior:focus-within {
+  background-color: #59d5bc;
+}
+
+.main-intro__item--interior:active {
+  background-color: @seafoam-blue-three;
+}
+
 .main-intro__item--toys {
-  background-color: @greeny-blue;
+  background-color: @seafoam-blue-three;
+}
+
+.main-intro__item--toys:hover,
+.main-intro__item--toys:focus-within {
+  background-color: @greeny-blue-two;
+}
+
+.main-intro__item--toys:active {
+  background-color: @greeny-blue-two;
 }
 
 .main-intro__link {
@@ -50,6 +79,19 @@
   color: @white;
   padding: 22px 185px 30px 29px;
   position: relative;
+}
+
+.main-intro__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-intro__link:hover svg,
+.main-intro__link:focus svg {
+  opacity: 0.6;
+}
+
+.main-intro__link:active svg {
+  opacity: 0.3;
 }
 
 .main-intro__link-interior-icon {
@@ -71,13 +113,19 @@
     background-size: 1150px 746px;
     position: relative;
     border-top: 1px solid @white-two;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .main-intro::after {
     content: "";
     position: absolute;
     background-image: url("../img/bg-zigzag-fill.svg");
-    top: 98.7%;
+    /*top: 98.7%;*/
+    bottom: -1.7%;
     height: 24px;
     background-size: 768px 24px;
     background-position-x: 0;
@@ -129,13 +177,19 @@
     background-size: 1150px 729px;
     position: relative;
     border-top: 1px solid @white-two;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .main-intro::after {
     content: "";
     position: absolute;
     background-image: url("../img/bg-zigzag-fill.svg");
-    top: 97.5%;
+    /* top: 97.5%;*/
+    bottom: -0.8%;
     height: 24px;
     background-size: auto 37px;
     background-position-x: 14px;

@@ -5,14 +5,17 @@
 
 .input__field {
   font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   border: 0 none;
   border-bottom: 2px solid @black;
   background-color: transparent;
-  z-index: 5;
+  z-index: 1;
+  outline: none;
 }
 
 .input__field--number {
@@ -42,6 +45,27 @@
 .input__image {
   position: absolute;
   right: 5px;
+  z-index: 0;
+}
+
+.input__field:hover,
+.input__field:focus,
+.input__field:active {
+  border-color: @seafoam-blue;
+}
+
+.input__field:hover + .input__image,
+.input__field:focus + .input__image,
+.input__field:active + .input__image {
+  fill: @seafoam-blue;
+  opacity: 1;
+}
+
+.input__field:hover + .input__image path,
+.input__field:focus + .input__image path,
+.input__field:active + .input__image path {
+  fill: @seafoam-blue;
+  opacity: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,16 +85,28 @@
     padding-right: 23px;
   }
 
+  .input__field {
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
   .input__field::placeholder {
     font-size: 19px;
     font-weight: normal;
-    line-height: 19px;
-    padding: 10px 10px 10px 17px;
+    line-height: 20px;
+    padding: 10px 10px 10px 15px;
+  }
+
+  .input__field--name::placeholder,
+  .input__field--surname::placeholder,
+  .input__field--patronymic::placeholder {
+    padding-left: 17px;
   }
 
   .input__image {
-    top: -5px;
-    right: 26px;
+    top: -3px;
+    right: 22px;
   }
 
   .input__field--number {
@@ -88,11 +124,19 @@
   }
 
   .input__image {
-    top: -7px;
+    top: -3px;
     right: 6px;
   }
 
   .input__field--name {
-    padding-bottom: 17px;
+    padding-bottom: 15px;
+  }
+
+  .input__field--surname {
+    padding-bottom: 14px;
+  }
+
+  .input__field--patronymic {
+    padding-bottom: 14px;
   }
 }

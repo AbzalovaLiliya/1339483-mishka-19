@@ -125,12 +125,16 @@
   }
 
   .reviews__wrapper {
-    background-image: url("../img/review@1x.jpg");
-    background-size: 350px 457px;
-    background-position: left top;
+    background-image: url("../img/review@1x.jpg"), linear-gradient(to right, #f7f7f7 350px, transparent 350px);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
     padding-left: 174px;
     padding-top: 72px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg"), linear-gradient(to right, #f7f7f7 350px, transparent 350px);
+    }
   }
 
   .reviews__title {
