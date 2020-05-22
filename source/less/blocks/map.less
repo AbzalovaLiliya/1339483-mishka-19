@@ -4,10 +4,46 @@
   background-color: @white;
   margin: 0;
   padding: 0;
+
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .map__iframe {
   width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.map__container {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.map__container::after {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+  top: 143px;
+  left: 139px;
+}
+
+.map__image {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .map__container::after {
+    top: 139px;
+    left: 364px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -20,5 +56,14 @@
     padding: 0;
     flex-grow: 1;
     z-index: 10;
+  }
+
+  .map__container {
+    width: 100%;
+  }
+
+  .map__container::after {
+    top: 146px;
+    left: 239px;
   }
 }
