@@ -14,13 +14,16 @@ buttonToggle.addEventListener("click", function (evt) {
 
 
 let popup = document.querySelector(".modal");
-let buttonAddPopup = document.querySelector(".js-popup");
+/*let buttonAddPopup = document.querySelector(".js-popup");*/
+let buttonAddPopups = document.querySelectorAll(".js-popup");
 const modalPopup =  document.querySelector(".modal--popup");
 
+for (const buttonAddPopup of buttonAddPopups){
   buttonAddPopup.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal--closed");
   });
+}
 
 modalPopup.addEventListener("click", function (evt) {
   if (evt.target.classList.contains("modal")) {
@@ -28,9 +31,6 @@ modalPopup.addEventListener("click", function (evt) {
   }
 });
 
-
-
-/*
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (!popup) return;
@@ -39,6 +39,4 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.add("modal--closed");
     };
   };
-});*/
-
-
+});

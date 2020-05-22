@@ -241,28 +241,30 @@
     </div>
   </div>
 </footer>
-<section class="modal modal--closed"> <!--  modal--closed -->
-  <h2 class="modal__header">Добавить в корзину</h2>
-  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="modal-form__fieldset">
-      <!--  <legend class="modal-form__title">Выберите размер:</legend>  -->
-      <div class="modal-form__button-container">
-        <label class="modal-form__label">
-          <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="1" checked="">
-          <span class="modal-form__box">s</span>
-        </label>
-        <label class="modal-form__label">
-          <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="2">
-          <span class="modal-form__box">m</span>
-        </label>
-        <label class="modal-form__label">
-          <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="2">
-          <span class="modal-form__box">l</span>
-        </label>
-      </div>
-    </fieldset>
-    <button class="btn btn--modal-form">Добавить</button>
-  </form>
+<section class="modal modal--closed modal--popup">
+  <div class="modal__container">
+    <h2 class="modal__header">Добавить в корзину</h2>
+    <form class="modal__popup modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__title">Выберите размер:</legend>
+        <div class="modal-form__button-container">
+          <label class="modal-form__label">
+            <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="1" checked="">
+            <span class="modal-form__box">s</span>
+          </label>
+          <label class="modal-form__label">
+            <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="2">
+            <span class="modal-form__box">m</span>
+          </label>
+          <label class="modal-form__label modal-form__label--last">
+            <input class="modal-form__input visually-hidden" type="radio" name="size-radio" value="2">
+            <span class="modal-form__box">l</span>
+          </label>
+        </div>
+      </fieldset>
+      <button class="btn modal-form__btn">Добавить</button>
+    </form>
+  </div>
 </section>
 <script src="js/script.js"></script>
 </body>
