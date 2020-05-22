@@ -31,12 +31,25 @@
 
 .page-footer__logo:hover path,
 .page-footer__logo:focus path {
+  cursor: pointer;
   fill: @greeny-blue-two;
 }
 
 .page-footer__logo:active path {
+  cursor: pointer;
   fill: @greeny-blue-two;
   opacity: 0.3;
+}
+
+.page-footer__logo--current {
+  cursor: default;
+}
+
+.page-footer__logo--current:hover path,
+.page-footer__logo--current:focus path,
+.page-footer__logo--current:active path {
+  fill: @black;
+  opacity: 100%;
 }
 
 @media (min-width: @tablet-width) {
