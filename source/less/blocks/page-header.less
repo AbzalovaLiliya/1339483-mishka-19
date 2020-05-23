@@ -73,6 +73,12 @@
 
 /*---------------------------------------------------------*/
 
+@media (max-width: @mobile-only) {
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-header--closed .page-header__mobile-nav {
     display: flex;
